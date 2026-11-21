@@ -1,0 +1,6 @@
+programme_id,programme_name,provider,duration,format,country,target_audience,programme_url
+TP001,3MTT Nigeria,NITDA,Approximately 3 months,Hybrid,Nigeria,Young Nigerians interested in technology skills,https://3mtt.nitda.gov.ng/
+TP002,Data Science,ALX Africa,22 weeks,Online,Africa,Individuals interested in data science,https://www.alxafrica.com/programme/data-science/
+TP003,Networking Academy Courses,Cisco,Varies by course,Online self-paced,Global,Individuals interested in networking cybersecurity and technology,https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html
+TP004,SkillsBuild Learning Programmes,IBM,Varies by course,Online self-paced,Global,Students and individuals developing technology and professional skills,https://skillsbuild.org/learning-catalog
+TP005,Skilling Africa with Google,Google,Varies by programme,Online,Africa,Individuals developing digital and technology skills,https://blog.google/intl/en-africa/

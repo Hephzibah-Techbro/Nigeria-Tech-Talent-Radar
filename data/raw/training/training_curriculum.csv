@@ -1,0 +1,16 @@
+curriculum_id,programme_id,technology_track,module_name,topics,skills_acquired,source_url
+TC001,TP002,Data Science,Data and AI Literacy,Data and AI foundations,Data literacy; AI literacy,https://www.alxafrica.com/programme/data-science/
+TC002,TP002,Data Science,Data Analytics,Spreadsheets; SQL; Power BI,Data analysis; SQL; data visualization,https://www.alxafrica.com/programme/data-science/
+TC003,TP002,Data Science,Python Programming,Python foundations; control flow; programming,Python programming; problem solving,https://www.alxafrica.com/programme/data-science/
+TC004,TP002,Data Science,Exploratory Data Analysis,Data exploration; visualization; reporting,Data cleaning; data visualization; reporting,https://www.alxafrica.com/programme/data-science/
+TC005,TP002,Data Science,Machine Learning,Regression; classification; model selection,Machine learning; predictive modelling,https://www.alxafrica.com/programme/data-science/
+TC006,TP002,Data Science,Advanced Data Science,Clustering; dimensionality reduction; NLP; recommender systems,Unsupervised learning; natural language processing,https://www.alxafrica.com/programme/data-science/
+TC007,TP003,Cybersecurity,Introduction to Cybersecurity,Introduction to cybersecurity concepts,Cybersecurity awareness,https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html
+TC008,TP003,Networking,Networking Basics,Networking concepts and fundamentals,Computer networking,https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html
+TC009,TP003,Artificial Intelligence,Introduction to Modern AI,Modern AI concepts,AI awareness,https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html
+TC010,TP003,Data Science,Introduction to Data Science,Introduction to data science,Data science awareness,https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html
+TC011,TP003,Programming,Python Essentials 1,Python programming fundamentals,Python programming,https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html
+TC012,TP003,Data Analytics,Data Analytics Essentials,Data analysis fundamentals,Data analytics,https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html
+TC013,TP003,Cybersecurity,Ethical Hacker,Ethical hacking fundamentals,Ethical hacking; security testing,https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html
+TC014,TP004,Data Analytics,Data Manipulation and Preparation,Data preparation and manipulation,Data cleaning; data preparation,https://skillsbuild.org/learning-catalog
+TC015,TP004,Data Analytics,Data Visualization and Communication,Data visualization and communicating insights,Data visualization; communication,https://skillsbuild.org/learning-catalog

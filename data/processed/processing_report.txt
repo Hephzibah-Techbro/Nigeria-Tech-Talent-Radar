@@ -1,0 +1,88 @@
+
+NIGERIA TECH TALENT RADAR
+DATA PROCESSING REPORT
+================================
+
+Processing date: 2026-11-21 14:49:19
+
+DATASET SUMMARY
+---------------
+Original job listings: 3330
+Cleaned job listings: 2871
+Duplicate records removed: 459
+Technology-related listings identified: 613
+
+TECHNOLOGY JOB CLASSIFICATION
+-----------------------------
+Technology listings were identified using keyword matching
+against job titles, job functions and job descriptions.
+
+TOP TECHNOLOGY SKILLS
+---------------------
+                  skill  job_count
+      Digital Marketing        120
+                    SEO         71
+           UI/UX Design         48
+     Project Management         47
+                 Python         43
+             JavaScript         37
+                  React         35
+                    Git         32
+             Networking         31
+                  Excel         29
+                  Agile         29
+                    AWS         26
+          Data Analysis         25
+Artificial Intelligence         25
+                    SQL         23
+
+TOP TECHNOLOGY JOB LOCATIONS
+----------------------------
+location
+Lagos                           287
+Unspecified                      88
+Abuja                            77
+Remote (Work From Home)          49
+Port Harcourt & Rivers State     23
+Lagos, Nigeria                   10
+Rest of Nigeria (Abia)            8
+Abeokuta & Ogun State             8
+Rest of Nigeria (Edo)             6
+Ibadan & Oyo State                6
+
+JOB FUNCTION DISTRIBUTION
+-------------------------
+job_function
+Job Function\n: Engineering & Technology             232
+Job Function\n: Software & Data                      173
+Job Function\n: Marketing & Communications            86
+Not specified                                         30
+Job Function\n: Management & Business Development     19
+Job Function\n: Creative & Design                     14
+Job Function\n: Sales                                 14
+Job Function\n: Product & Project Management          13
+Job Function\n: Customer Service & Support            10
+Job Function\n: Accounting, Auditing & Finance         6
+
+OUTPUT FILES
+------------
+jobs_cleaned.csv
+tech_jobs.csv
+tech_skills.csv
+processing_report.txt
+
+DATA LIMITATIONS
+----------------
+The source dataset's original collection date is unknown.
+
+Technology job classification uses keyword matching and
+may include false positives or miss relevant listings.
+
+Skill counts represent job listings mentioning each skill.
+They do not represent verified employer requirements.
+
+Relative posting dates are preserved as originally supplied.
+No calendar dates have been inferred.
+
+This pipeline processes a historical CSV dataset.
+It does not automatically collect live job listings.
