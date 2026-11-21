@@ -27,11 +27,28 @@ def clean_jobs(df):
     # 3. Replace empty strings with missing values
     df = df.replace(r"^\s*$", pd.NA, regex=True)
 
+    
     # 4. Remove duplicate job URLs only
     if "job_url" in df.columns:
-        df = df.drop_duplicates(
+
+        # Identify records with valid URLs
+        valid_urls = df["job_url"].notna() & (
+            df["job_url"].astype(str).str.strip() != ""
+        )
+
+        # Remove duplicates only among records with valid URLs
+        jobs_with_urls = df[valid_urls].drop_duplicates(
             subset=["job_url"],
             keep="first"
+        )
+
+        # Retain every record without a URL
+        jobs_without_urls = df[~valid_urls]
+
+        # Combine both groups
+        df = pd.concat(
+            [jobs_with_urls, jobs_without_urls],
+            ignore_index=True
         )
 
     # 5. Handle missing values in important columns

@@ -3,12 +3,12 @@ NIGERIA TECH TALENT RADAR
 DATA PROCESSING REPORT
 ================================
 
-Processing date: 2026-11-21 14:49:19
+Processing date: 2026-11-21 16:53:45
 
 DATASET SUMMARY
 ---------------
-Original job listings: 3330
-Cleaned job listings: 2871
+Original job listings: 3335
+Cleaned job listings: 2876
 Duplicate records removed: 459
 Technology-related listings identified: 613
 
