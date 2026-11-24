@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: public
+    description: Original tables loaded into the Nigeria Tech Talent Radar PostgreSQL warehouse.
+
+    tables:
+      - name: job_listings
+      - name: skills
+      - name: job_skills
+      - name: training_programmes
+      - name: training_curricula
+      - name: curriculum_skills

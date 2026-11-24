@@ -2,24 +2,24 @@
 # Python cache files
 __pycache__/
 *.py[cod]
-
 # Virtual environment
 .venv/
 venv/
-
 # Environment variables and secrets
 .env
 .env.*
-
 # Keep the example environment file
 !.env.example
-
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
-
 # IDE and editor settings
 .vscode/
-
 # Operating system files
 .DS_Store
 Thumbs.db
+# dbt virtual environment
+.dbt_venv/
+# dbt generated files
+target/
+dbt_packages/
+logs/
