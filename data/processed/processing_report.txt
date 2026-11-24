@@ -3,7 +3,7 @@ NIGERIA TECH TALENT RADAR
 DATA PROCESSING REPORT
 ================================
 
-Processing date: 2026-11-21 16:53:45
+Processing date: 2026-11-23 17:12:42
 
 DATASET SUMMARY
 ---------------
@@ -45,30 +45,31 @@ Abuja                            77
 Remote (Work From Home)          49
 Port Harcourt & Rivers State     23
 Lagos, Nigeria                   10
-Rest of Nigeria (Abia)            8
 Abeokuta & Ogun State             8
-Rest of Nigeria (Edo)             6
+Rest of Nigeria (Abia)            8
 Ibadan & Oyo State                6
+Rest of Nigeria (Nassarawa)       6
 
 JOB FUNCTION DISTRIBUTION
 -------------------------
 job_function
-Job Function\n: Engineering & Technology             232
-Job Function\n: Software & Data                      173
-Job Function\n: Marketing & Communications            86
-Not specified                                         30
-Job Function\n: Management & Business Development     19
-Job Function\n: Creative & Design                     14
-Job Function\n: Sales                                 14
-Job Function\n: Product & Project Management          13
-Job Function\n: Customer Service & Support            10
-Job Function\n: Accounting, Auditing & Finance         6
+Job Function\r\n: Engineering & Technology             232
+Job Function\r\n: Software & Data                      173
+Job Function\r\n: Marketing & Communications            86
+Not specified                                           30
+Job Function\r\n: Management & Business Development     19
+Job Function\r\n: Sales                                 14
+Job Function\r\n: Creative & Design                     14
+Job Function\r\n: Product & Project Management          13
+Job Function\r\n: Customer Service & Support            10
+Job Function\r\n: Accounting, Auditing & Finance         6
 
 OUTPUT FILES
 ------------
 jobs_cleaned.csv
 tech_jobs.csv
 tech_skills.csv
+job_skills.csv
 processing_report.txt
 
 DATA LIMITATIONS

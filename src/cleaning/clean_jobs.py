@@ -3,6 +3,8 @@
 import pandas as pd
 import re
 
+from datetime import date
+
 
 def clean_jobs(df):
     """
@@ -27,7 +29,6 @@ def clean_jobs(df):
     # 3. Replace empty strings with missing values
     df = df.replace(r"^\s*$", pd.NA, regex=True)
 
-    
     # 4. Remove duplicate job URLs only
     if "job_url" in df.columns:
 
@@ -101,6 +102,26 @@ def clean_jobs(df):
         df["date_posted_days_ago"] = (
             df["date_posted_raw"].apply(convert_relative_date)
         )
+
+        # Reference date when the job listings were collected
+        collection_date = pd.Timestamp("2026-11-21")
+
+        # Estimate the original posting date
+        df["estimated_posting_date"] = (
+            collection_date
+            - pd.to_timedelta(
+                df["date_posted_days_ago"],
+                unit="D"
+            )
+        )
+
+        # Identify dates that were successfully estimated
+        df["date_estimated"] = (
+            df["date_posted_days_ago"].notna()
+        )
+
+        # Preserve the original collection date
+        df["collection_date"] = collection_date.date()
 
     return df
 

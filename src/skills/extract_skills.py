@@ -194,3 +194,43 @@ def extract_skills(tech_jobs):
         ).reset_index(drop=True)
 
     return skills_df
+
+
+def extract_job_skills(tech_jobs):
+    """
+    Extract individual skills required by each technology job.
+    """
+
+    records = []
+
+    search_columns = [
+        col for col in ["title", "details", "info"]
+        if col in tech_jobs.columns
+    ]
+
+    for _, row in tech_jobs.iterrows():
+        search_text = " ".join(
+            str(row[col]) if pd.notna(row[col]) else ""
+            for col in search_columns
+        )
+
+        for skill, keywords in SKILLS.items():
+            pattern = "|".join(
+                r"(?<!\w)" + re.escape(word) + r"(?!\w)"
+                for word in keywords
+            )
+
+            if re.search(pattern, search_text, flags=re.IGNORECASE):
+                records.append({
+                    "job_url": row["job_url"],
+                    "skill": skill
+                })
+
+    job_skills_df = pd.DataFrame(
+        records,
+        columns=["job_url", "skill"]
+    )
+
+    job_skills_df = job_skills_df.drop_duplicates()
+
+    return job_skills_df

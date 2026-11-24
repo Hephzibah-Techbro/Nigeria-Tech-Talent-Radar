@@ -6,7 +6,8 @@ from src.ingestion.load_jobs import load_jobs
 from src.cleaning.clean_jobs import clean_jobs
 from src.skills.extract_skills import (
     classify_technology_jobs,
-    extract_skills
+    extract_skills,
+    extract_job_skills
 )
 
 
@@ -45,6 +46,9 @@ def main():
     print("\n4. Extracting technology skills...")
     skills = extract_skills(tech_jobs)
 
+    print("\nExtracting individual job-skill relationships...")
+    job_skills = extract_job_skills(tech_jobs)
+
     # 5. Save datasets
     print("\n5. Saving processed datasets...")
 
@@ -60,6 +64,11 @@ def main():
 
     skills.to_csv(
         output_dir / "tech_skills.csv",
+        index=False
+    )
+
+    job_skills.to_csv(
+        output_dir / "job_skills.csv",
         index=False
     )
 
@@ -122,6 +131,7 @@ OUTPUT FILES
 jobs_cleaned.csv
 tech_jobs.csv
 tech_skills.csv
+job_skills.csv
 processing_report.txt
 
 DATA LIMITATIONS
